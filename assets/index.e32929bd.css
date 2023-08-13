@@ -1,0 +1,1 @@
+*,*:before,*:after{box-sizing:border-box;margin:0;padding:0;font-weight:400}body{min-height:100vh;margin:0;padding:0}[data-theme=light] body{background-color:#fcfcfc;color:#a7a7a7}[data-theme=grayy] body{background-color:#f0f2f5;color:#666}[data-theme=dark] body{background-color:#e4e6eb;color:#333}
