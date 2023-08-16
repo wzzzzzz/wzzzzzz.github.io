@@ -1,15 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
-    <script type="module" crossorigin src="/assets/index.56f19bb6.js"></script>
+    <script type="module" crossorigin src="/assets/index.58c251ba.js"></script>
     <link rel="stylesheet" href="/assets/index.e32929bd.css">
   </head>
   <body>
     <div id="app"></div>
+    <script>
+      ;(function () {
+        if (location.search) {
+          var params = {}
+          location.search
+            .replace(/^\?/, '')
+            .split('&')
+            .forEach((s) => {
+              var v = s.split('=')
+              params[v[0]] = v[1]
+            })
+          if (params.page) {
+            console.log('index.html', params.page)
+            history.replaceState(null, null, decodeURIComponent(params.page))
+          }
+        }
+      })()
+    </script>
     
   </body>
 </html>
