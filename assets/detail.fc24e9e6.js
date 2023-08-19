@@ -1,1 +1,0 @@
-import{d as e,o as t,c as o,e as s,b as a}from"./index.b6783a97.js";const n={class:"about"},_=a("h1",null,"This is an about page",-1),c=[_],u=e({__name:"detail",setup(l){return t(async()=>{console.log("detail")}),(d,i)=>(s(),o("div",n,c))}});export{u as default};
